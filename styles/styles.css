@@ -224,12 +224,12 @@ img {
     grid-template-rows: auto auto;
 }
 
-nav div div ul li a:hover {
-    color: #ff0000 !important;
+.navbar-nav .nav-link:hover {
+    color: #ff0000;
 }
 
-nav div a:hover {
-    color: #ff0000 !important;
+.navbar-brand:hover {
+    color: #ff0000;
 }
 
 button:hover {
