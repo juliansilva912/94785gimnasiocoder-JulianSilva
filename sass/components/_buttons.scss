@@ -1,0 +1,15 @@
+@use '../utilities/variables' as *;
+
+.boton {
+    background-color: $color-fondo;
+    color: $color-titulo;
+    transition: background-color 0.3s;
+}
+
+.boton:active {
+    background-color: $color-texto;
+}
+
+.boton:focus {
+    background-color: $color-texto;
+}

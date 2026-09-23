@@ -1,0 +1,37 @@
+@mixin tamaño_fuente($tf, $af) {
+    font-size: $tf;
+    font-weight: $af;
+}
+
+@mixin padmarg($pad, $marg, $mar-bottom) {
+    padding: $pad;
+    margin: $marg;
+    margin-bottom: $mar-bottom;
+}
+
+@mixin cajas($dir, $jus, $al, $pos, $g) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $al;
+    position: $pos;
+    gap: $g;
+}
+
+@mixin grillas($col, $row, $area, $jus, $g) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-template-areas: $area;
+    justify-content: $jus;
+    gap: $g;
+}
+
+@mixin ajustarimg($h, $mw) {
+    height: $h;
+    max-width: $mw;
+}
+
+@mixin ajustar_area($ar) {
+    grid-area: $ar;
+}

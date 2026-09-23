@@ -1,0 +1,56 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+h1, h2, h3 {
+    font-family: "Merriweather", sans-serif;
+    font-optical-sizing: auto;
+    @include tamaño_fuente(null, 300px);
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+h1 {
+    @include tamaño_fuente(30px, null);
+    color: $color-titulo;
+}
+
+p, li, a, figcaption {
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+h2 {
+    @include tamaño_fuente(16px, null);
+}
+
+h3 {
+    @include tamaño_fuente(13px, null);
+}
+
+li {
+    list-style: $estilo-lista;
+}
+
+a {
+    color: $color-links;
+    @include tamaño_fuente(13px, null);
+}
+
+@media (min-width: 1024px) {
+
+    h1 {
+        @include tamaño_fuente(40px, null);
+    }
+
+    h2 {
+        @include tamaño_fuente(36px, null);
+    }
+
+    h3 {
+        @include tamaño_fuente(33px, null);
+    }
+
+    a {
+        @include tamaño_fuente(16px, null);
+    }
+}

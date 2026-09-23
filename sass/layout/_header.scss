@@ -1,0 +1,35 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.encabezado {
+    @include cajas(column, null, center, sticky, null);
+
+    background-color: $color-contraste;
+
+    top: 0;
+    @include padmarg(20px, 10px, null);
+}
+
+.color {
+    color: $color-texto;
+}
+
+
+@media (min-width: 1024px) {
+    
+    .encabezado {
+        @include cajas(row, space-between, null, null, null);
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: $color-titulo;
+    }
+    
+    .navbar-brand:hover {
+        color: $color-titulo;
+    }
+    
+    button:hover {
+        color: $color-titulo;
+    }
+}
