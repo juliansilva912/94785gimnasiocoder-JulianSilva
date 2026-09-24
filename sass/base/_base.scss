@@ -1,5 +1,6 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+@use 'sass:map';
 
 * {
     @include padmarg(0px, 0px, null);
@@ -7,11 +8,11 @@
 }
 
 body {
-    background-color: $color-fondo;
+    background-color: map-get($theme-colors, "color-fondo");
 }
 
 h2, h3, p, li, figcaption {
-    color: $color-texto;
+    color: map-get($theme-colors, "color-texto");
 }
 
 img {

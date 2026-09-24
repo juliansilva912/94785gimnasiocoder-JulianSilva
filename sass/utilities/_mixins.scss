@@ -3,6 +3,13 @@
     font-weight: $af;
 }
 
+@mixin familia_fuente($ff, $foz, $fs, $fvs) {
+    font-family: $ff;
+    font-optical-sizing: $foz;
+    font-style: $fs;
+    font-variation-settings: $fvs;
+}
+
 @mixin padmarg($pad, $marg, $mar-bottom) {
     padding: $pad;
     margin: $marg;

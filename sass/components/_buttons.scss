@@ -1,15 +1,15 @@
 @use '../utilities/variables' as *;
 
 .boton {
-    background-color: $color-fondo;
-    color: $color-titulo;
+    background-color: map-get($theme-colors, "color-fondo");
+    color: map-get($theme-colors, "color-titulo");
     transition: background-color 0.3s;
-}
 
-.boton:active {
-    background-color: $color-texto;
-}
+    &:active {
+        background-color: map-get($theme-colors, "color-texto");
+    }
 
-.boton:focus {
-    background-color: $color-texto;
+    &:focus {
+        background-color: map-get($theme-colors, "color-texto");
+    }
 }

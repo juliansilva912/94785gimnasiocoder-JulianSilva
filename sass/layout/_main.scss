@@ -24,28 +24,17 @@
 .box {
     @include cajas(column, null, null, null, null);
     @include padmarg(20px, 10px, null);
-    border: 2px solid $color-contraste;
+    border: 2px solid map-get($theme-colors, "color-contraste");
 }
 
 .caja {
-    background-color: $color-caja;
+    background-color: map-get($theme-colors, "color-caja");
     @include padmarg(20px, null, 10px);
-}
-
-.fotos {
-    @include padmarg(10px, null, null);
-    @include grillas(auto, null, null, center, 20);
-    background-color: $color-caja;
 }
 
 .contenedor {
     @include cajas(column, null, null, null, 30);
     @include padmarg(20px, 10px, null);
-}
-
-.cajita {
-    border-radius: $borde-radio;
-    background-color: $color-contraste;
 }
 
 .ajustar_img {
@@ -55,7 +44,7 @@
 
 .planes {
     @include padmarg(10px, null, null);
-    background-color: $color-caja;
+    background-color: map-get($theme-colors, "color-caja");
 }
 
 
@@ -66,15 +55,11 @@
     }
 
     .carrusel {
-        border: 2px solid $color-contraste;
+        border: 2px solid map-get($theme-colors, "color-contraste");
         @include padmarg(20px, 10px, null);
     }
 
     .ajustar_img {
         @include ajustarimg(70vh, null);
-    }
-
-    .fotos {
-        @include grillas(auto auto auto, auto auto, null, center, 20);
     }
 }

@@ -2,21 +2,20 @@
 @use '../utilities/mixins' as *;
 
 h1, h2, h3 {
-    font-family: "Merriweather", sans-serif;
-    font-optical-sizing: auto;
     @include tamaño_fuente(null, 300px);
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    font-family: $font-titulos;
+    font-optical-sizing: $font-size;
+    font-style: $font-sty;
+    font-variation-settings: $font-var;
 }
 
 h1 {
     @include tamaño_fuente(30px, null);
-    color: $color-titulo;
+    color: map-get($theme-colors, "color-titulo");
 }
 
 p, li, a, figcaption {
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: $font-texto;
 }
 
 h2 {
@@ -32,7 +31,7 @@ li {
 }
 
 a {
-    color: $color-links;
+    color: map-get($theme-colors, "color-links");
     @include tamaño_fuente(13px, null);
 }
 

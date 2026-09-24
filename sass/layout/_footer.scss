@@ -5,5 +5,5 @@
     @include cajas(column, null, null, null, 20);
     @include padmarg(20px, 10px, null);
     
-    background-color: $color-contraste;
+    background-color: map-get($theme-colors, "color-contraste");
 }

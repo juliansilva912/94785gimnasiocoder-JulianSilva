@@ -4,14 +4,14 @@
 .encabezado {
     @include cajas(column, null, center, sticky, null);
 
-    background-color: $color-contraste;
+    background-color: map-get($theme-colors, "color-contraste");
 
     top: 0;
     @include padmarg(20px, 10px, null);
 }
 
 .color {
-    color: $color-texto;
+    color: map-get($theme-colors, "color-texto");
 }
 
 
@@ -20,16 +20,8 @@
     .encabezado {
         @include cajas(row, space-between, null, null, null);
     }
-
-    .navbar-nav .nav-link:hover {
-        color: $color-titulo;
-    }
-    
-    .navbar-brand:hover {
-        color: $color-titulo;
-    }
     
     button:hover {
-        color: $color-titulo;
+        color: map-get($theme-colors, "color-titulo");
     }
 }

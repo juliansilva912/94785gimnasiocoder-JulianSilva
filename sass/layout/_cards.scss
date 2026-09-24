@@ -1,0 +1,20 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+.fotos {
+    @include padmarg(10px, null, null);
+    @include grillas(auto, null, null, center, 20);
+    background-color: map-get($theme-colors, "color-caja");
+}
+
+.cajita {
+    border-radius: $borde-radio;
+    background-color: map-get($theme-colors, "color-contraste");
+}
+
+@media (min-width: 1024px) {
+
+    .fotos {
+        @include grillas(auto auto auto, auto auto, null, center, 20);
+    }
+}

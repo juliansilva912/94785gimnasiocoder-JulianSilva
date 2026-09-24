@@ -2,7 +2,8 @@
 @use 'base/tipografia';
 
 @use 'layout/header';
-@use 'layout/main';
-@use 'layout/footer';
-
+@use 'layout/nav';
 @use 'components/buttons';
+@use 'layout/main';
+@use 'layout/cards';
+@use 'layout/footer';
