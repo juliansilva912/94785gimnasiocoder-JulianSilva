@@ -7,9 +7,28 @@
     background-color: map-get($theme-colors, "color-caja");
 }
 
+.caja {
+    background-color: map-get($theme-colors, "color-caja");
+    @include padmarg(20px, null, 10px);
+}
+
 .cajita {
     border-radius: $borde-radio;
     background-color: map-get($theme-colors, "color-contraste");
+
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: map-get($theme-colors, "rojo-contraste");
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .fotos {
+        @include grillas(auto auto, auto auto, null, center, 20);
+    }
 }
 
 @media (min-width: 1024px) {

@@ -20,8 +20,4 @@
     .encabezado {
         @include cajas(row, space-between, null, null, null);
     }
-    
-    button:hover {
-        color: map-get($theme-colors, "color-titulo");
-    }
 }

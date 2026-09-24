@@ -27,11 +27,6 @@
     border: 2px solid map-get($theme-colors, "color-contraste");
 }
 
-.caja {
-    background-color: map-get($theme-colors, "color-caja");
-    @include padmarg(20px, null, 10px);
-}
-
 .contenedor {
     @include cajas(column, null, null, null, 30);
     @include padmarg(20px, 10px, null);

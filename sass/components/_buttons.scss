@@ -13,3 +13,9 @@
         background-color: map-get($theme-colors, "color-texto");
     }
 }
+
+.bot {
+    @extend .boton;
+    background-color: map-get($theme-colors, "rojo-contraste");
+    color: map-get($theme-colors, "color-login");
+}

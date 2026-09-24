@@ -8,7 +8,9 @@ Sitio web multi-página desarrollado como proyecto práctico para la materia de 
 - HTML5 (etiquetas semánticas: section, article, figure, figcaption).
 - CSS (Flexbox, herencia, especificidad).
 - SCSS (Variables, Mixins, Partials, Map).
-- Bootstrap (carousel, navbar).
+- Bootstrap (Carousel, Navbar).
+- Animate (Logo de la pagina).
+- Animaciones con transition.
 - Google Fonts.
 
 
@@ -20,6 +22,7 @@ Sitio web multi-página desarrollado como proyecto práctico para la materia de 
 - Navbar implementado con bootstrap.
 - Tipografías personalizadas mediante Google Fonts.
 - Organizacion de estilos con SCSS mediante Partials en la carpeta `scss/`.
+
 
 
 ## Estructura de Estilos (SCSS)
