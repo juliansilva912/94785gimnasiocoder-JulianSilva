@@ -63,7 +63,6 @@ Para trabajar con los estilos en desarrollo y compilar a CSS:
    ```bash
    sass --watch sass/main.scss:styles/styles.css
 
-
 ## Estado del proyecto
 
 Proyecto práctico en desarrollo para la materia de Desarrollo Web.
